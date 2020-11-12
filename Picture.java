@@ -15,14 +15,14 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
-    private Square grass;
+    private Square grass; 
 
     /**
      * Constructor for objects of class Picture
      */
     public Picture()
     {
-        // nothing to do... instance variables are automatically set to null
+      
     }
 
     /**
@@ -63,9 +63,12 @@ public class Picture
         grass.changeSize(1000);
         grass.makeVisible();
         
-        sun.slowMoveVertical(-140);
+        sun.slowMoveVertical(-140); 
     }
 
+    public void atardecer(){
+        sun.slowMoveVertical(140);
+    }
     /**
      * Change this picture to black/white display
      */
